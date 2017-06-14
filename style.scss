@@ -5,6 +5,10 @@
 // IMPORTS
 //
 
+p {
+    border: 10px #000000;
+}
+
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -18,21 +22,23 @@ html {
 }
 
 body {
-	background: ("http://i.imgur.com/5CPMAXn.gif");
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background-image: url("http://wallpapercave.com/wp/VHCVRBV.jpg");
+	font: 18px/1.4 "Courier New", Courier, monospace;
+        color: white;
 }
 
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+  padding: #000000 10px;
+  background-color: rgba(217, 217, 217, 0.6);
+  border: black 7px;
+  border-radius: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: red;
   font-weight: bold;
 
   line-height: 1.7;
@@ -47,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a {
-    color: inherit;
+    color: black;
   }
 }
 
@@ -61,7 +67,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: black ;
 }
 
 p {
@@ -69,11 +75,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: black;
   text-decoration: none;
-	cursor: pointer;
+	cursor: crosshair;
   &:hover, &:active {
-    color: $blue;
+    color: purple;
   }
 }
 
@@ -117,16 +123,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: #666666;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: #ffffff;
+  background: rgba(242, 242, 242, 0.6);
+  border-radius: 25px;
 }
 ::selection {
-  color: $black;
+  color: #ffffff;
   background: $lightGray;
 }
 
@@ -151,12 +158,12 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: #000000 50px;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 10px solid #000000;
 
   @include mobile {
     text-align: center;
@@ -176,7 +183,7 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 100px;
   }
 }
 
@@ -192,8 +199,8 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
-  cursor: pointer;
+  color: #ffffff;
+  cursor: crosshair;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
@@ -202,7 +209,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #000000;
   font-size: 16px;
 
   @include mobile {
@@ -210,22 +217,10 @@ img {
   }
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -248,18 +243,35 @@ nav {
 
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: none;
+  border-bottom: #66ff33;
 }
 
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid #b3ffb3;
     padding: 0.1em 1em;
-    color: $gray;
+    color:  #b3ffb3;
     font-size: 22px;
     font-style: italic;
   }
+  
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+ table, th, td {
+ 	border: 2px solid black;
+ 	
+ }
+ 
+ th {
+ 	height: 50px;
+ 	vertical-align: middle;
+	color: black;
+        Background-color: red;
+ }
 
   .comments {
     margin-top: 10px;
@@ -279,8 +291,14 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 20px #66ff33;
   text-align: center;
+}
+
+iframe{
+  Width: 100%;
+  Height: 700px
+  border: $black 10px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
