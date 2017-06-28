@@ -331,7 +331,7 @@ iframe{
 .dropdown {
     position: relative;
     display: inline-block;   
-    right: 0px;
+    right: -100px;
 }
 
 
@@ -364,5 +364,5 @@ iframe{
 
 
 .dropdown:hover .dropbtn {
-    background-color: #996600;
+    background-color: #a01414;
 }
