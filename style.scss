@@ -339,7 +339,7 @@ iframe{
     display: none;
     position: absolute;
     min-width: 180px;
-    background-color: #f9f9f9;
+    background-color: #a01414;
     list-style-type: none;
     text-align: right;
 }
@@ -355,7 +355,8 @@ iframe{
 }
 
 
-.dropdown-content a:hover {background-color:#CCCCFF;
+.dropdown-content a:hover {background-color:#a01414
+	;
 }
 
 .dropdown:hover .dropdown-content {
